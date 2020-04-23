@@ -1,0 +1,32 @@
+@import '../abstracts/variables';
+
+.card__score {
+	width: 180px;
+	height: 130px;
+	border-radius: 20px;
+	margin: 0rem 2rem;
+	box-shadow: 0rem 0rem 0.8rem rgba($black, 0.3);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	transition: all 0.2s;
+
+	&-title {
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	&-points {
+		color: $white;
+		font-size: 1.5rem;
+		font-weight: 300;
+	}
+
+	&:hover {
+		transform: scale(1.2) rotate(-10deg);
+	}
+}

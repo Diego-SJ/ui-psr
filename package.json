@@ -1,0 +1,14 @@
+{
+	"name": "ui-ppt",
+	"version": "1.0.0",
+	"description": "juego de piedra, papel o tijera",
+	"main": "index.js",
+	"scripts": {
+		"sass": "node-sass sass/main.scss css/style.css -w"
+	},
+	"author": "diego salas",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^4.13.1"
+	}
+}
