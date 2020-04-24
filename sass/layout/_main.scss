@@ -16,3 +16,27 @@
 		background-color: $blue-dark;
 	}
 }
+
+.section__gaming {
+	height: 30vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section__control {
+	height: 30vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section__menu-controls {
+	height: 5vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

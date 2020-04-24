@@ -1,0 +1,67 @@
+@import '../abstracts/variables';
+
+.btn-primary {
+	width: 100px;
+	height: 100px;
+	background: transparent;
+	border: 5px solid $primary-color;
+	border-radius: 10px;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem;
+	box-shadow: 0rem 0rem 1rem rgba($black, 0.2);
+
+	transition: all 0.2s;
+
+	&:link,
+	&:visited,
+	&:focus {
+		outline: none;
+	}
+
+	& > i {
+		font-size: 6rem;
+		color: $primary-color;
+		display: block;
+		transition: all 0.2s;
+	}
+
+	&:hover {
+		// transform: scale(1.3) rotate(10deg);
+		background-color: $primary-color;
+		cursor: pointer;
+		animation: animation1 1s infinite;
+	}
+
+	&:hover > i {
+		color: $white;
+	}
+}
+
+.btn-menu {
+	width: 60px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: $primary-color;
+	border: 0;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	box-shadow: 0rem 0rem 0.5rem rgba($black, 0.2);
+	transition: all 0.2s;
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	& > i {
+		color: $white;
+		font-size: 1.5rem;
+		display: block;
+	}
+}
