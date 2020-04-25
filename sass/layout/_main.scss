@@ -16,6 +16,12 @@
 	& > div:last-of-type {
 		background-color: $blue-dark;
 	}
+
+	@media only screen and (max-width: 600px) {
+		height: 20vh;
+		width: 100vw;
+		justify-content: space-around;
+	}
 }
 
 .section__gaming {
@@ -27,6 +33,7 @@
 
 	@media only screen and (max-width: 600px) {
 		height: 25vh;
+		width: 100vw;
 	}
 }
 
@@ -36,6 +43,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@media only screen and (max-width: 600px) {
+		height: 25vh;
+		width: 100vw;
+		justify-content: space-around;
+	}
 }
 
 .section__menu-controls {
@@ -46,6 +59,8 @@
 	justify-content: center;
 
 	@media only screen and (max-width: 600px) {
+		height: 5vh;
+		width: 100vw;
 		margin-top: 2rem;
 	}
 }

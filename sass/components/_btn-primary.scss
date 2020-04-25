@@ -36,6 +36,12 @@
 		@media only screen and (max-width: 600px) {
 			font-size: 4rem;
 		}
+
+		&,
+		&:focus,
+		&::visited {
+			outline: none;
+		}
 	}
 
 	&:hover {
