@@ -24,11 +24,12 @@ body {
 
 .section__score {
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 3rem; }
   .section__score > div:first-of-type {
     background-color: #00b7ff; }
   .section__score > div:last-of-type {
@@ -42,7 +43,7 @@ body {
   justify-content: center; }
 
 .section__control {
-  height: 30vh;
+  height: 25vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -99,7 +100,9 @@ body {
 .gaming__panel > i {
   font-size: 10rem;
   color: rgba(172, 172, 172, 0.842);
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1000; }
 
 .btn-primary {
   width: 100px;
@@ -148,6 +151,8 @@ body {
     color: #fff;
     font-size: 1.5rem;
     display: block; }
+  .btn-menu, .btn-menu:visited, .btn-menu:focus {
+    outline: none; }
 
 @keyframes animation1 {
   0% {
@@ -156,3 +161,39 @@ body {
     transform: scale(1.3); }
   100% {
     transform: scale(1); } }
+
+@keyframes winner {
+  0% {
+    transform: scale(1) rotate(0deg);
+    color: rgba(172, 172, 172, 0.842); }
+  50% {
+    transform: scale(2) rotate(10deg);
+    color: #00e686; }
+  100% {
+    transform: scale(1) rotate(0deg);
+    color: rgba(172, 172, 172, 0.842); } }
+
+@keyframes loser {
+  0% {
+    transform: scale(1) rotate(0deg);
+    color: rgba(172, 172, 172, 0.842); }
+  50% {
+    transform: scale(0.5) rotate(-10deg);
+    color: #ec3e64; }
+  100% {
+    transform: scale(1) rotate(0deg);
+    color: rgba(172, 172, 172, 0.842); } }
+
+@keyframes same {
+  0% {
+    transform: scale(1) rotate(0deg); }
+  50% {
+    transform: scale(1.3) rotate(-10deg); }
+  100% {
+    transform: scale(1) rotate(0deg); } }
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }

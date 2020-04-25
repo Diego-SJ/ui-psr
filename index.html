@@ -13,6 +13,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
 		/>
 		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./js/main.js"></script>
 	</head>
 	<body>
 		<header class="header">
@@ -20,39 +21,39 @@
 		</header>
 		<main>
 			<section class="section__score">
-				<div class="card__score">
+				<div id="cscore-p1" class="card__score">
 					<h1 class="card__score-title">Player 1</h1>
-					<span class="card__score-points">0</span>
+					<span id="scoreP1" class="card__score-points">0</span>
 				</div>
-				<div class="card__score">
+				<div id="cscore-pc" class="card__score">
 					<h1 class="card__score-title">Computer</h1>
-					<span class="card__score-points">0</span>
+					<span id="scorePC" class="card__score-points">0</span>
 				</div>
 			</section>
 
 			<section class="section__gaming">
 				<div class="gaming__panel">
-					<i class="fa fa-hand-rock"></i>
+					<i id="assetP1" class="fa fa-hand-rock"></i>
 				</div>
 				<div class="gaming__panel">
-					<i class="fa fa-hand-rock"></i>
+					<i id="assetPC" class="fa fa-hand-rock"></i>
 				</div>
 			</section>
 
 			<section class="section__menu-controls">
-				<button class="btn-menu">
+				<button id="reset-game" onclick="restart()" class="btn-menu">
 					<i class="fa fa-redo"></i>
 				</button>
 			</section>
 
 			<section class="section__control">
-				<button class="btn-primary">
+				<button id="rock" onclick="useRock()" class="btn-primary">
 					<i class="fa fa-hand-rock"></i>
 				</button>
-				<button class="btn-primary">
+				<button id="paper" onclick="usePaper()" class="btn-primary">
 					<i class="fa fa-hand-paper"></i>
 				</button>
-				<button class="btn-primary">
+				<button id="scissors" onclick="useScissors()" class="btn-primary">
 					<i class="fa fa-hand-scissors"></i>
 				</button>
 			</section>
