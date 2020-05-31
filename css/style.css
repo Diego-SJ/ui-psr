@@ -178,13 +178,13 @@ main {
   .btn-primary:link, .btn-primary:visited, .btn-primary:focus {
     outline: none; }
   .btn-primary > i {
-    font-size: 6rem;
+    font-size: 4rem;
     color: #902ced;
     display: block;
     transition: all 0.2s; }
     @media only screen and (max-width: 600px) {
       .btn-primary > i {
-        font-size: 4rem; } }
+        font-size: 3rem; } }
     .btn-primary > i, .btn-primary > i:focus, .btn-primary > i::visited {
       outline: none; }
   .btn-primary:hover {
@@ -200,7 +200,6 @@ main {
   border-radius: 10px;
   background-color: #902ced;
   border: 0;
-  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,7 +211,7 @@ main {
     transform: scale(1.1); }
   .btn-menu > i {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: block; }
   .btn-menu, .btn-menu:visited, .btn-menu:focus {
     outline: none; }
